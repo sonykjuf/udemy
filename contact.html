@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>👍 Vlad's Personal Site</title>
+</head>
+<body>
+
+<h1>My Contact Details</h1>
+
+<p>221B Baker St., London</p>
+<p>+420123456789</p>
+<p>mujemail@email.com</p>
+
+<hr>
+
+
+<form action="mailto:mujemail@email.com" method="post" enctype="text/plain">            
+    <!-- action = co se má stát po kliknutí na submit - původně tam bylo "index.html", 
+což mě hodilo na home page. Mailto otevře výchozího clienta a method="post" znamená, 
+že se to vyplněné nastaví jako text pro odeslání.
+Enctype = encoding type = aby se do zprávy nepřidávaly nějaké divné znaky -->
+    <label>Your Name: </label>
+        <input type="text" name="jmeno" value="">
+        <!-- name = podle toho poznám tu sekci, až mi to přijde emailem -->
+    <br>
+    <label>Your Email:</label>
+        <input type="email" name="emailova_adr" id="">
+    <br>
+    <label>Your Message:</label><br>
+    <textarea name="text_zpravy" id="" rows="10" cols="30"></textarea><br>
+        <!-- input box pro zprávy. Velikost se dá na stránce měnit - tohle je startovní velikost -->
+    <input type="submit" name="" value="Submit">   
+        <!-- tlačítko "Submit" (ona tam měla při nulové value tlačítko "Submit", 
+        mně to ukazovalo "Submit Query", proto jsem dal value "Submit")-->
+</form>
+
+<hr>
+
+<p>Back to the <a href="index.html">home</a> page.</p>
+
+</body>
+</html>
