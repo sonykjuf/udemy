@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>👍 Vlad's Personal Site</title>
+</head>
+<body>
+    <table cellspacing="20">
+        <tr>
+            <td><img src="https://permanentrisk.cz/img/pages/t1.jpg" alt="Vladimir Profile Picture" width="100"></td>
+            <td>    
+                <h1>Vladimír Machaň</h1>
+                <p><em>Student at <strong>Udemy</strong></em></p>
+            </td>
+        </tr>
+    </table>
+
+    <ul> <!-- ul = un-ordered list -->
+    </ul>
+
+    <br>
+
+<table>
+    <thead>
+        <tr>
+            <th>Datum</th>
+            <th>Zaměstnání</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2008-2011</td>
+            <td>MENDELU</td>
+        </tr>
+        <tr>
+            <td>2013-2022</td>
+            <td>IBM</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>K čemu je footer? (zobrazuje se nad tabulkou)</tr>
+    </tfoot>
+</table>
+
+<br><br>
+
+<form action="mailto:permanent.risk@gmail.com" method="post" enctype="text/plain">            
+    <!-- action = co se má stát po kliknutí na submit - původně tam bylo "index.html", 
+což mě hodilo na home page. Mailto otevře výchozího clienta a method="post" znamená, 
+že se to vyplněné nastaví jako text pro odeslání.
+Enctype = encoding type = aby se do zprávy nepřidávaly nějaké divné znaky -->
+    <label>Vyber si barvu: </label>
+    <input type="color" name="barva" value=""><br>         
+        <!-- vloží to tam color picker (mohl bych tím třeba měnit barvu stránek) -->
+    <label>Your Name: </label>
+        <input type="text" name="jmeno" value="">
+        <!-- name = podle toho poznám tu sekci, až mi to přijde emailem -->
+    <br>
+    <label>Password: </label>
+    <input type="password" name="heslo" value=""><br>    <!-- při psaní do password input-->
+    <label>Do you want to sign up to the email list?</label>
+    <input type="checkbox" name="zaskr_pole" value="">        <!-- zobrazí to zaškrtávací čtvereček-->
+    <br>
+    <label>Your email:</label>
+    <input type="email" name="emailova_adr" id=""><br>
+    <label>Your Message:</label><br>
+    <textarea name="text_zpravy" id="" rows="10" cols="30"></textarea><br>
+                                                    <!-- input box pro zprávy. Velikost se dá na stránce měnit - tohle je startovní velikost -->
+    <input type="submit" name="" value="Odeslat">   <!-- tlačítko "Submit" (ona tam měla při nulové value tlačítko "Submit", 
+        mně to ukazovalo "Submit Query")-->
+</form>
+
+</body>
+</html>
